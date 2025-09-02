@@ -4,4 +4,4 @@
 
 test
 
-[mysecondpage](secondnote)
+[mysecondpage](mysecondnote)
