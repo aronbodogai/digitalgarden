@@ -1,16 +1,4 @@
 {# Vercel Analytics component for Eleventy #}
 {%- if meta.env === 'prod' -%}
-<script>
-  // Import and initialize Vercel Analytics
-  import('https://cdn.jsdelivr.net/npm/@vercel/analytics@1/dist/index.mjs')
-    .then(({ inject }) => {
-      inject({
-        mode: 'production',
-        debug: false
-      });
-    })
-    .catch(err => {
-      console.error('Failed to load Vercel Analytics:', err);
-    });
-</script>
+<script src="/_vercel/insights/script.js" defer></script>
 {%- endif -%}
